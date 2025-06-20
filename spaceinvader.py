@@ -40,11 +40,11 @@ enemyX = []
 enemyY = []
 enemyX_change = []
 enemyY_change = []
-num_of_enemies = 6
+num_of_enemies =6 
 
 for _i in range(num_of_enemies):
     enemyImg.append(pygame.image.load('enemy.png'))
-    enemyX.append(random.randint(0, SCREEN_WIDTH - 64))  # 64 is the size of the enemy
+    enemyX.append(random.randint(0, SCREEN_WIDTH - 64))  # 64 is the size of the enemy 
     enemyY.append(random.randint(ENEMY_START_Y_MIN, ENEMY_START_Y_MAX))
     enemyX_change.append(ENEMY_SPEED_X)
     enemyY_change.append(ENEMY_SPEED_Y)
@@ -53,6 +53,7 @@ bulletX = 0
 bulletY = PLAYER_START_Y
 bulletX_change = 0
 bulletY_change = BULLET_SPEED_Y
+bullet_state = "ready"
 score_value = 0
 font = pygame.font.Font('freesansbold.ttf', 32)
 textX = 10
